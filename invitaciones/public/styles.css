@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#map {
+    position: fixed !important;  /* Fija el mapa en el fondo de la ventana */
+    top: 50%;  /* Centra el mapa verticalmente */
+    left: 50%;  /* Centra el mapa horizontalmente */
+    transform: translate(-50%, -50%);  /* Ajusta el mapa al centro exacto */
+    height: 110vh !important;  /* Mantiene la altura completa de la ventana */
+    width: 100vw !important;  /* Mantiene el ancho completo de la ventana */
+    z-index: -1;  /* Coloca el mapa detrás del contenido */
+}
+
+.overlay {
+    position: relative !important;
+    z-index: 1;  /* Asegura que el contenido de la superposición esté por encima del mapa */
+    height: 200vh;  /* Permite que la página tenga más altura para el scroll */
+}
